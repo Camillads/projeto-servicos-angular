@@ -30,14 +30,21 @@
       <mat-radio-group aria-label="Select an option">
         <mat-radio-button *ngFor="let item of lista" [value]="item.Codigo">
           <div class="itens">
-            <div class="item">{{item.Item}}</div> 
+            <div class="item">{{item.Item}}</div>
             <div class="valor">R$ {{item.Valor}}</div>
           </div>
         </mat-radio-button>
       </mat-radio-group>
     </mat-card>
     <mat-card class="resumo">
-      PLANO:
+      <div class="texto"> PLANO: </div>
+      <mat-list>
+        <mat-list-item *ngFor="let item of lista">
+          {{item.Item}}
+          <div class="spacer"></div>
+          <button mat-icon-button (click)="excluir()">EXCLUIR</button>
+        </mat-list-item>
+      </mat-list>
     </mat-card>
   </div>
 </div>

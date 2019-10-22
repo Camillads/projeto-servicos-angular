@@ -74,6 +74,14 @@
     flex: 1;
   }
 
+  mat-list {
+    cursor: pointer;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
   @media screen and (max-width: 575px) {
     svg#rocket-smoke {
       display: none;
