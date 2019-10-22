@@ -2,7 +2,7 @@
     margin: 0;
   }
 
-  .container {
+  .container-principal {
     height: 100%;
     display: grid;
     grid-template-rows: 15% 85%;
@@ -23,7 +23,25 @@
   }
 
   .lista {
-    width: 92%;
+    width: 100%;
+  }
+
+  .itens {
+    display: flex;
+  }
+
+  .item {
+    margin-right: 116px;
+  }
+  
+  mat-radio-group {
+    display: grid;
+    width: 100%;
+  }
+
+  mat-radio-button {
+    padding: 1% 1% 1% 1%;
+    width: 100%;
   }
 
   .resumo {
@@ -32,7 +50,7 @@
   }
 
   .texto {
-    padding-bottom: 1%;
+    padding-bottom: 4%;
     text-align: center;
   }
 
@@ -50,6 +68,10 @@
 
   .toolbar img {
     margin: 0 16px;
+  }
+
+  .spacer {
+    flex: 1;
   }
 
   @media screen and (max-width: 575px) {
